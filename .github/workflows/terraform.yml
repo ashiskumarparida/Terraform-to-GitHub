@@ -6,13 +6,11 @@ on:
   pull_request:
 
 permissions:
-  contents: read
-  
-  env:
+  contents: read 
+env:
      AWS_ACCESS_KEY_ID="AKIA4QX4AMYSRMUDQCHC"
      AWS_SECRET_ACCESS_KEY="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"
      AWS_REGION="ap-south-1"
-
 jobs:
   terraform:
     name: 'Terraform'
