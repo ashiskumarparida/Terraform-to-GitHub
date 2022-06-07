@@ -2,14 +2,14 @@
 #   account_id = "860595709477"
 #   region     = "ap-south-1"
   
-terraform {
-  required_providers {
-    aws = {
-      version = ">= 2.7.0"
-      source = "hashicorp/aws"
-    }
-  }
-}
+# terraform {
+#   required_providers {
+#     aws = {
+#       version = ">= 2.7.0"
+#       source = "hashicorp/aws"
+#     }
+#   }
+# }
 
 
 # Configure the AWS Provider
