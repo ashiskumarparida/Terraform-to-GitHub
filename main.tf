@@ -4,7 +4,7 @@ resource "aws_config_aggregate_authorization" "ak" {
 }
 terraform {
   required_providers {
-    aws = {
+    aws =""
       source = "hashicorp/aws"
 
     }
