@@ -15,6 +15,13 @@ terraform {
   required_version = "> 0.7.0"
 }
 
+terraform {
+  backend "s3" {
+    bucket = "aws_s3_bucket.b.name"
+    key    = "tfstate"
+    region  = "ap-south-1"
+  }
+}
 
 
 # Configure the AWS Provider
@@ -31,3 +38,5 @@ resource "aws_instance" "ec2" {
     Name = "Hello"
   }
 }
+resource "aws_s3_bucket" "b" {
+  bucket = "my-tf-test-bucket"
