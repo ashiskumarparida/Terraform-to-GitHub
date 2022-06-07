@@ -2,14 +2,6 @@ resource "aws_config_aggregate_authorization" "ak" {
   account_id = "860595709477"
   region     = "ap-south-1"
 }
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-        
-    }
-  }
-}
 # Configure the AWS Provider
 provider "aws" {
   region     = "ap-south-1"
