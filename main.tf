@@ -3,7 +3,7 @@ terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
     organization = "AK_Automated"
-    workspaces { prefix = "vpc-" }
+    workspaces { prefix = "vpc-1" }
   }
 }
 
