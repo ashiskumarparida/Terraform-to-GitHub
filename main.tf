@@ -3,7 +3,7 @@ terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
     organization = "AK_Automated"
-    workspaces { prefix = "vpc-1" }
+    workspaces { prefix = "Auto-deploy" }
   }
 }
 
@@ -50,13 +50,13 @@ resource "aws_instance" "ec2" {
 #   required_version = "> 0.7.0"
 # }
 
-terraform {
-  backend "s3" {
-    bucket = "aws_s3_bucket.b.name"
-    key    = "tfstate"
-    region  = "ap-south-1"
-  }
-}
+# terraform {
+#   backend "s3" {
+#     bucket = "aws_s3_bucket.b.name"
+#     key    = "tfstate"
+#     region  = "ap-south-1"
+#   }
+# }
 
 
 # # Configure the AWS Provider
@@ -73,6 +73,6 @@ terraform {
 #     Name = "Hello"
 #   }
 # }
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket"
-}
+# resource "aws_s3_bucket" "b" {
+#   bucket = "my-tf-test-bucket"
+# }
