@@ -10,7 +10,7 @@ terraform {
     organization = "app.terraform.io"
 
     workspaces {
-      name = "AK_Automated"
+      name = "sahoo"
     }
   }
 }
