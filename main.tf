@@ -1,11 +1,14 @@
+
 terraform {
-  required_version = "1.2.2"
   backend "remote" {
-    hostname     = "app.terraform.io"
-    organization = "AK_Automated"
-    workspaces { prefix = "Auto-deploy" }
+    organization = "app.terraform.io"
+
+    workspaces {
+      name = "AK_Automated"
+    }
   }
 }
+
 
 provider "aws" {
   region = "ap-south-1"
