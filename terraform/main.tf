@@ -101,7 +101,7 @@ resource "aws_instance" "ec2" {
 #   secret_key = "oGLddkqbcbnpUA4IMJBaraJNiiF7KC6b0Y9f6l+d"
 # }
 # resource "aws_instance" "ec2" {
-#   ami           = "ami-079b5e5b3971bd10d "
+#   ami           = "ami-079b5e5b3971bd10d"
 #   instance_type = "t2.micro"
 #   subnet_id     = "subnet id -09057160738ffdd97"
 #   tags = {
