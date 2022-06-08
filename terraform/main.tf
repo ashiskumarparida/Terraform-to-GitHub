@@ -1,12 +1,12 @@
-terraform {
-  required_providers {
-    aws = {
-      version = ">= 2.7.0"
-      source = "hashicorp/aws"
-    }
-  }
+# terraform {
+#   required_providers {
+#     aws = {
+#       version = ">= 2.7.0"
+#       source = "hashicorp/aws"
+#     }
+#   }
 
-  required_version = ">=0.14.9"
+#   required_version = ">=0.14.9"
 #   backend "s3" {
 #        bucket = "[Remote_State_S3_Bucket_Name]"
 #        key    = "[Remote_State_S3_Bucket_Key]"
