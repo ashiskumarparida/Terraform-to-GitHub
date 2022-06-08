@@ -11,25 +11,15 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-
-module "vpc" {
-  source = "github.com/nitheesh86/terraform-modules/modules/vpc"
-
-  name = sahoo
-  cidr = "10.0.0.0/16"
-
-  azs             = ["ap-south-1a", "ap-south-1b", "ap-south-1c"]
-  public_subnets  = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
-  private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
-
-  enable_nat_gateway = true
-  enable_vpn_gateway = true
-
+resource "aws_instance" "ec2" {
+  ami           = "ami-079b5e5b3971bd10d "
+  instance_type = "t2.micro"
+  subnet_id     = "subnet id -09057160738ffdd97"
   tags = {
-    Terraform   = "true"
-    Environment = practice
+    Name = "Hello"
   }
 }
+
 
 
 
