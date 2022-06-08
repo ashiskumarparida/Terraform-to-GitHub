@@ -15,7 +15,7 @@ provider "aws" {
 module "vpc" {
   source = "github.com/nitheesh86/terraform-modules/modules/vpc"
 
-  name = var.name
+  name = sahoo
   cidr = "10.0.0.0/16"
 
   azs             = ["ap-south-1a", "ap-south-1b", "ap-south-1c"]
@@ -27,7 +27,7 @@ module "vpc" {
 
   tags = {
     Terraform   = "true"
-    Environment = var.env
+    Environment = practice
   }
 }
 
